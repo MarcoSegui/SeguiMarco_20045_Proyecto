@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- sweetalert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="public/styles.css">
+
+    <title>20045_MarcoSegui_ProyectoFinal</title>
+</head>
+
+<body>
+
+    <div class="navegador">
+        <nav>
+            <button> <img src="img/Logo_centro.jpg" alt="" width="400"></button>
+        </nav>
+    </div>
+
+    <div id="div1" class="div1">
+        
+        <section class="contenedorIntro">
+            <section class="contenedorImagen">
+            <img src="img/intro.jpg" width="800">
+        </section>
+
+        <section class="contenedorDatos">
+            <h1>¡Bienvenido!</h1>
+            <h4>Por favor ingrese su nombre para comenzar</h4>
+            <input type="text" id = "name">
+            <input id = "btnDiv1" class="btn btn-info" type="submit" value="Listo">
+        </section>
+        </section>
+                
+    </div>
+
+    <div id="div2" class="div2" style="display: none">
+
+        <div class="contenedorTitulo">
+
+            <h3>¿Qué habitación te gustaría reservar?</h3>
+
+        </div>
+
+        <div class="contenedorCards">
+
+            <section class="card">
+                <h4>Habitación simple</h4>  
+                <img src="img/single.jpg" alt="" width="250"
+                height="200">
+                <p> Es una habitación de un ambiente para una persona con cama individual.</p>
+                <input class = "btn btn-dark" id = "Simple" type="button" value="Reservar">
+            </section>
+
+            <section class="card">
+                <h4>Habitación doble</h4>  
+                <img src="img/doble.jpg" alt="" width="250"
+                height="200">
+                <p>Es una habitación de un ambiente con cama matrimonial u opcional dos camas separadas.</p>
+                <input class = "btn btn-dark" id = "Doble" type="button" value="Reservar">
+            </section>
+
+            <section class="card">
+                <h4>Habitación triple</h4>   
+                <img src="img/triple.jpg" alt="" width="250"
+                height="200">
+                <p>Es una habitación de dos ambientes para 3 personas, opcional cama matrimonial y una cama invidual o tres camas individuales.</p>
+                <input class = "btn btn-dark" id = "Triple" type="button" value="Reservar">
+            </section>
+
+            <section class="card">
+                <h4>Habitación familiar</h4>   
+                <img src="img/familiar.jpg" alt="" width="250"
+                height="200">
+                <p>Es una cabaña dentro del complejo turistico con una habitacion grande con una capacidad para 4 personas.</p> 
+                <input class = "btn btn-dark" id = "Familiar" type="button" value="Reservar">
+            </section>
+              
+        </div>
+
+    </div>
+    
+    <div id="div3" class="div3" style="display: none">
+
+            <section class="contenedorTitulo">
+            <h3>¿Cuántas noches querés hospedarte?</h3>
+            </section>
+
+            <section class="contenedorFechas">
+                <section>
+                    <p><h4>Fecha de ingreso</h4></p>
+                    <input type="date" id="checkin" name="trip-start"
+                    value=""
+                    min="" 
+                    max="2025-12-31">
+                </section>
+
+                <section>
+                    <p><h4>Fecha de salida</h4></p>
+                    <input type="date" id="checkout" name="trip-start"
+                    value=""
+                    min=""  
+                    max="2025-12-31">
+                </section>        
+            </section>
+
+            <section class="contenedorBtnDiv3Confirm">
+                <input id = "btnDiv3" class="btn btn-primary" type="submit" value="Continuar">
+            </section>
+
+            <section class="contenedorBtnDiv3Back">
+                <input id = "btnDiv3Back" class="btn btn-secondary" type="submit" value="Volver">
+            </section>
+
+    </div>
+
+    <div id="div4" class="div4" style="display: none">
+
+        <section class="contenedorBoleta">
+
+            <section class="contenedorImagen"><img src="img/block_final.png" width="1100"> 
+                    <p class="titulo" id="titulo">
+                        titulo
+                    </p>
+                    <p class="texto1">
+                        Estos son los datos de tu reserva, por favor verifica que esten correctos:
+                    </p>
+                    <p class="texto2" id="texto2">
+                        texto2 
+                    </p>
+                    <p class="texto3" id="texto3">
+                        texto3
+                    </p>
+                    <p class="texto4" id="texto4">
+                        texto4
+                    </p>
+                    <p class="texto5" id="texto5">
+                        texto5
+                    </p>
+                    <p class="texto6" id="texto6">
+                        texto6
+                    </p>
+                    <p class="div4Confirm">
+                        <input id = "btnDiv4" class="btn btn-success" type="submit" value="Confirmar">
+                    </p>
+                    <p class="div4Back">
+                        <input id = "btnDiv4Back" class="btn btn-secondary" type="submit" value="Volver">
+                    </p>
+            </section>
+        </section>
+        
+    </div>
+
+    <!-- JavaScript -->
+    <script src="Data/rooms.js"></script>
+    <script src="app/main.js"></script>
+</body>
+</html>

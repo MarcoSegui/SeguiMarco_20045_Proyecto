@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+}
+
+.div1 , .div2, .div3, .div4 {
+    border-top:5px double rgb(22, 1, 99);
+    background-color: rgb(228, 245, 247);
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+}
+
+.navegador button{
+    background-color: white;
+    border: none;   
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    height: 83.5vh;
+}
+
+.div1 h1{
+    font: 500% sand-serif;
+    display: flex;
+    text-align: center;
+}
+
+.div1 h4{
+    display: flex;
+    text-align: center;
+}
+
+.div2{
+    height: 83.5vh;
+}
+
+.contenedorIntro{
+    display: flex;
+    margin: 5rem;
+}
+
+.contenedorDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.card{
+    border:  2px solid black;
+    display: flex;
+    align-items: center;
+    height:440px;
+    width:300px;
+}
+
+.contenedorCards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding:1rem;
+}
+
+.card input{
+    position: absolute;
+	bottom: 10px;
+}
+
+.card p{
+    text-align: center;
+    padding: 1.6rem;
+}
+
+.contenedorTitulo h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.div3{
+    display: flex;
+    flex-direction: column;
+    height: 83.5vh;
+}
+
+.div3 h4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedorFechas {
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 10rem;
+}
+
+.contenedorBtnDiv3Confirm{
+    margin-top: 5rem;
+    position: absolute;
+    bottom:250px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedorBtnDiv3Back{
+    margin-top: 5rem;
+    position: absolute;
+    bottom:200px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedorBoleta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    height: 84.5vh;
+}
+
+.contenedorImagen{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo{
+    position: absolute;
+    top: 110px;
+    left: 800px;
+}
+
+.texto1{
+    position: absolute;
+    font-size: 135%;
+    top: 170px;
+    left: 400px;
+}
+
+.texto2{
+    position: absolute;
+    top: 220px;
+    left: 400px;
+}
+
+.texto3{
+    position: absolute;
+    top: 260px;
+    left: 400px;
+}
+
+.texto4{
+    position: absolute;
+    top: 350px;
+    left: 420px;
+}
+
+.texto5{
+    position: absolute;
+    top: 390px;
+    left: 420px;
+}
+
+.texto6{
+    position: absolute;
+    top: 430px;
+    left: 420px;
+}
+
+.div4Confirm{
+    position: absolute;
+    top: 530px;
+    left: 850px;
+}
+
+.div4Back{
+    position: absolute;
+    top: 530px;
+    left: 750px;
+}
